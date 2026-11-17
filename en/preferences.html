@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#faf9f5">
+  <meta name="description" content="Chark email preferences: choose whether to keep receiving product and update emails, or keep only required account notices.">
+  <title>Email preferences — Chark</title>
+  <link rel="canonical" href="https://ai.chenc.com.cn/en/preferences.html">
+  <link rel="alternate" hreflang="zh-CN" href="https://ai.chenc.com.cn/preferences.html">
+  <link rel="alternate" hreflang="en" href="https://ai.chenc.com.cn/en/preferences.html">
+  <link rel="icon" href="../assets/chark.png" type="image/png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    .doc{max-width:820px;padding:72px 0 96px}
+    .doc h1{font-size:clamp(38px,5vw,56px);letter-spacing:-1px;line-height:1.2;margin-bottom:18px}
+    .doc .lead{font-size:17px;line-height:1.85;max-width:620px}
+    .doc section{margin-top:48px}
+    .doc h2{font-size:clamp(22px,2.5vw,29px);letter-spacing:-.3px;line-height:1.35;margin-bottom:14px}
+    .doc p,.doc li{font-size:15px;line-height:1.9;color:var(--muted)}
+    .doc ul{padding-left:22px;margin:0}
+    .doc li{margin:9px 0}
+    .doc a{color:var(--clay)}
+    .who{background:#f0eee6;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:26px 0;font-size:14px;color:var(--muted)}
+    .who b{color:var(--ink);font-weight:500}
+    .choices{display:grid;gap:14px;margin-top:22px}
+    .choice{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:#fffefa;display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+    .choice div{max-width:520px}
+    .choice h3{font-size:19px;line-height:1.4;margin-bottom:6px}
+    .choice p{font-size:13px;line-height:1.8;margin:0}
+    .choice .button{min-height:44px;padding:11px 18px;font-size:14px;border-radius:9px;flex-shrink:0}
+    .note{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);font-size:13px}
+    .doc .back{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);font-size:14px}
+    .doc-nav{display:flex;gap:22px;font-size:13px;padding:0 4.5%;border-bottom:1px solid var(--line);background:#faf9f5}
+    .doc-nav a{padding:12px 0;color:var(--muted)}
+    .doc-nav a[aria-current]{color:var(--ink);border-bottom:2px solid var(--clay)}
+    @media(max-width:540px){.doc{padding:48px 0 72px}.doc-nav{gap:16px;padding:0 20px;font-size:12px}.choice{padding:18px}.choice .button{width:100%}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Chark home"><img src="../assets/chark.png" alt="" width="45" height="34"><span>Chark</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="help.html">Help</a>
+      <a class="nav-link" href="privacy.html">Privacy</a>
+      <a class="nav-link" href="preferences.html" aria-current="page">Email preferences</a>
+    </nav>
+    <div class="nav-actions"><a class="language" href="../index.html" lang="zh-CN" aria-label="Switch to Chinese">中文</a></div>
+  </header>
+  <nav class="doc-nav" aria-label="On-site pages">
+    <a href="help.html">Help Center</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="preferences.html" aria-current="page">Email preferences</a>
+  </nav>
+  <main id="main" class="doc section-width">
+    <p class="eyebrow">Email preferences</p>
+    <h1>Email preferences</h1>
+    <p class="lead">Decide which emails Chark may send you later. The change takes effect after we receive your confirmation email.</p>
+
+    <div class="who">
+      Current email: <b id="who-email">Could not be read from the link</b>
+      <div id="who-hint" style="margin-top:6px;font-size:13px">If your email was not filled in automatically, please write your address manually in the email below.</div>
+    </div>
+
+    <section aria-labelledby="options">
+      <h2 id="options">Choose a preference</h2>
+      <p>The three options correspond to three ways of handling mail. Clicking a button opens an email with the content already written; just send it.</p>
+      <div class="choices">
+        <div class="choice">
+          <div>
+            <h3>Keep receiving product and update emails</h3>
+            <p>Including new features, usage tips, and progress updates. Emails will not be frequent.</p>
+          </div>
+          <a class="button" id="opt-all" href="mailto:chen@chenc.com.cn">Choose</a>
+        </div>
+        <div class="choice">
+          <div>
+            <h3>Keep only required account notices</h3>
+            <p>Stop product and update emails; we will contact you only about account security or changes to the terms.</p>
+          </div>
+          <a class="button button-outline" id="opt-essential" href="mailto:chen@chenc.com.cn">Choose</a>
+        </div>
+        <div class="choice">
+          <div>
+            <h3>Stop everything</h3>
+            <p>No more emails after this. If you change your mind later, you can come back and adjust it at any time.</p>
+          </div>
+          <a class="button button-outline" id="opt-none" href="mailto:chen@chenc.com.cn">Choose</a>
+        </div>
+      </div>
+      <p class="note">This site is static; it does not save any choice or write cookies. The preference is recorded through this email. If sending is inconvenient, you can also reply to any Chark email you received to explain your preference.</p>
+    </section>
+
+    <section aria-labelledby="more">
+      <h2 id="more">Want to change anything else</h2>
+      <ul>
+        <li>Change recipient email: write with your old and new email addresses.</li>
+        <li>Delete old email records kept locally: state in the email the address to delete and roughly when.</li>
+        <li>Other questions: see the <a href="help.html">Help Center</a>; data boundaries are in <a href="privacy.html">Privacy</a>.</li>
+      </ul>
+    </section>
+
+    <p class="back"><a href="index.html">← Back to Chark home</a> · <a href="help.html">Help Center</a> · <a href="privacy.html">Privacy</a></p>
+  </main>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var email = (params.get('email') || params.get('e') || '').trim();
+      var who = document.getElementById('who-email');
+      var hint = document.getElementById('who-hint');
+      if (email) {
+        who.textContent = email;
+        hint.textContent = 'If this is not your email, please correct it manually in the email below.';
+      }
+      var labels = {
+        'opt-all': { subject: 'Chark email preferences: keep receiving product and update emails', line: 'I would like to keep receiving Chark product and update emails.' },
+        'opt-essential': { subject: 'Chark email preferences: keep only required account notices', line: 'Please keep only required account notices and stop product and update emails.' },
+        'opt-none': { subject: 'Chark email preferences: stop everything', line: 'Please stop sending all Chark emails to me.' }
+      };
+      Object.keys(labels).forEach(function (id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        var cfg = labels[id];
+        var body = cfg.line + '\n\nRecipient email: ' + (email || '(please fill in)') + '\n';
+        el.href = 'mailto:chen@chenc.com.cn?subject=' + encodeURIComponent(cfg.subject) + '&body=' + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>
