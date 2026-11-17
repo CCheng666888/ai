@@ -2,4 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url><loc>https://ai.chenc.com.cn/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.chenc.com.cn/"/><xhtml:link rel="alternate" hreflang="en" href="https://ai.chenc.com.cn/en/"/></url>
 <url><loc>https://ai.chenc.com.cn/en/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.chenc.com.cn/"/><xhtml:link rel="alternate" hreflang="en" href="https://ai.chenc.com.cn/en/"/></url>
+<url><loc>https://ai.chenc.com.cn/help.html</loc></url>
+<url><loc>https://ai.chenc.com.cn/privacy.html</loc></url>
+<url><loc>https://ai.chenc.com.cn/preferences.html</loc></url>
 </urlset>

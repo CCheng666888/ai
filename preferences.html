@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#faf9f5">
+  <meta name="description" content="Chark 邮件偏好管理：选择是否继续接收产品与更新邮件，或只保留账号必要通知。">
+  <title>邮件偏好管理 — Chark</title>
+  <link rel="canonical" href="https://ai.chenc.com.cn/preferences.html">
+  <link rel="icon" href="assets/chark.png" type="image/png">
+  <link rel="stylesheet" href="assets/site.css">
+  <style>
+    .doc{max-width:820px;padding:72px 0 96px}
+    .doc h1{font-size:clamp(38px,5vw,56px);letter-spacing:-1px;line-height:1.2;margin-bottom:18px}
+    .doc .lead{font-size:17px;line-height:1.85;max-width:620px}
+    .doc section{margin-top:48px}
+    .doc h2{font-size:clamp(22px,2.5vw,29px);letter-spacing:-.3px;line-height:1.35;margin-bottom:14px}
+    .doc p,.doc li{font-size:15px;line-height:1.9;color:var(--muted)}
+    .doc ul{padding-left:22px;margin:0}
+    .doc li{margin:9px 0}
+    .doc a{color:var(--clay)}
+    .who{background:#f0eee6;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:26px 0;font-size:14px;color:var(--muted)}
+    .who b{color:var(--ink);font-weight:500}
+    .choices{display:grid;gap:14px;margin-top:22px}
+    .choice{border:1px solid var(--line);border-radius:12px;padding:20px 22px;background:#fffefa;display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+    .choice div{max-width:520px}
+    .choice h3{font-size:19px;line-height:1.4;margin-bottom:6px}
+    .choice p{font-size:13px;line-height:1.8;margin:0}
+    .choice .button{min-height:44px;padding:11px 18px;font-size:14px;border-radius:9px;flex-shrink:0}
+    .note{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);font-size:13px}
+    .doc .back{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);font-size:14px}
+    .doc-nav{display:flex;gap:22px;font-size:13px;padding:0 4.5%;border-bottom:1px solid var(--line);background:#faf9f5}
+    .doc-nav a{padding:12px 0;color:var(--muted)}
+    .doc-nav a[aria-current]{color:var(--ink);border-bottom:2px solid var(--clay)}
+    @media(max-width:540px){.doc{padding:48px 0 72px}.doc-nav{gap:16px;padding:0 20px;font-size:12px}.choice{padding:18px}.choice .button{width:100%}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳至正文</a>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Chark 首页"><img src="assets/chark.png" alt="" width="45" height="34"><span>Chark</span></a>
+    <nav class="desktop-nav" aria-label="站内导航">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link" href="help.html">帮助</a>
+      <a class="nav-link" href="privacy.html">隐私</a>
+      <a class="nav-link" href="preferences.html" aria-current="page">邮件偏好</a>
+    </nav>
+    <div class="nav-actions"><a class="language" href="index.html">中文</a></div>
+  </header>
+  <nav class="doc-nav" aria-label="站内页面">
+    <a href="help.html">帮助中心</a>
+    <a href="privacy.html">隐私说明</a>
+    <a href="preferences.html" aria-current="page">邮件偏好管理</a>
+  </nav>
+  <main id="main" class="doc section-width">
+    <p class="eyebrow">Email preferences</p>
+    <h1>邮件偏好管理</h1>
+    <p class="lead">决定 Chark 之后还能给你发哪些邮件。改动会在收到你的确认邮件后生效。</p>
+
+    <div class="who">
+      当前邮箱：<b id="who-email">未从链接读取到</b>
+      <div id="who-hint" style="margin-top:6px;font-size:13px">如果没有自动带出邮箱，请在下方的邮件里手动写上你的收信地址。</div>
+    </div>
+
+    <section aria-labelledby="options">
+      <h2 id="options">选择一个偏好</h2>
+      <p>三个选项对应三种处理方式，点按钮会打开一封已经写好内容的邮件，直接发送即可。</p>
+      <div class="choices">
+        <div class="choice">
+          <div>
+            <h3>继续接收产品与更新邮件</h3>
+            <p>包括新功能、使用技巧与阶段性进展。邮件不会太频繁。</p>
+          </div>
+          <a class="button" id="opt-all" href="mailto:chen@chenc.com.cn">选择</a>
+        </div>
+        <div class="choice">
+          <div>
+            <h3>只保留账号必要通知</h3>
+            <p>停止产品与更新类邮件，只在涉及账号安全、条款变化时联系你。</p>
+          </div>
+          <a class="button button-outline" id="opt-essential" href="mailto:chen@chenc.com.cn">选择</a>
+        </div>
+        <div class="choice">
+          <div>
+            <h3>全部停止</h3>
+            <p>之后不再发送任何邮件。如果之后又想接收，随时回来改就行。</p>
+          </div>
+          <a class="button button-outline" id="opt-none" href="mailto:chen@chenc.com.cn">选择</a>
+        </div>
+      </div>
+      <p class="note">本站是静态页面，不保存任何选择结果，也不写 Cookie；偏好记录通过这封邮件完成。如果不方便发信，也可以直接回复收到的任意一封 Chark 邮件说明想法。</p>
+    </section>
+
+    <section aria-labelledby="more">
+      <h2 id="more">还想改点别的</h2>
+      <ul>
+        <li>换收信邮箱：写信说明原邮箱与新邮箱。</li>
+        <li>删除本地留存的旧邮件记录：在信里写明要删除的邮箱与大致时间。</li>
+        <li>其他问题见<a href="help.html">帮助中心</a>，数据边界见<a href="privacy.html">隐私说明</a>。</li>
+      </ul>
+    </section>
+
+    <p class="back"><a href="index.html">← 返回 Chark 首页</a> · <a href="help.html">帮助中心</a> · <a href="privacy.html">隐私说明</a></p>
+  </main>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var email = (params.get('email') || params.get('e') || '').trim();
+      var who = document.getElementById('who-email');
+      var hint = document.getElementById('who-hint');
+      if (email) {
+        who.textContent = email;
+        hint.textContent = '如果不是你的邮箱，请在下方的邮件里手动改正。';
+      }
+      var labels = {
+        'opt-all': { subject: 'Chark 邮件偏好：继续接收产品与更新邮件', line: '我想继续接收 Chark 的产品与更新邮件。' },
+        'opt-essential': { subject: 'Chark 邮件偏好：只保留账号必要通知', line: '请只保留账号必要通知，停止产品与更新类邮件。' },
+        'opt-none': { subject: 'Chark 邮件偏好：全部停止', line: '请停止向我发送所有 Chark 邮件。' }
+      };
+      Object.keys(labels).forEach(function (id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        var cfg = labels[id];
+        var body = cfg.line + '\n\n收信邮箱：' + (email || '（请填写）') + '\n';
+        el.href = 'mailto:chen@chenc.com.cn?subject=' + encodeURIComponent(cfg.subject) + '&body=' + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>

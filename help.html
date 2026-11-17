@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#faf9f5">
+  <meta name="description" content="Chark 帮助中心：如何开始使用、Chark 能做什么、常见问题与联系方式。">
+  <title>帮助 — Chark</title>
+  <link rel="canonical" href="https://ai.chenc.com.cn/help.html">
+  <link rel="icon" href="assets/chark.png" type="image/png">
+  <link rel="stylesheet" href="assets/site.css">
+  <style>
+    .doc{max-width:860px;padding:72px 0 96px}
+    .doc h1{font-size:clamp(38px,5vw,58px);letter-spacing:-1px;line-height:1.2;margin-bottom:18px}
+    .doc .lead{font-size:17px;line-height:1.85;max-width:640px}
+    .doc section{margin-top:54px}
+    .doc h2{font-size:clamp(23px,2.6vw,31px);letter-spacing:-.3px;line-height:1.35;margin-bottom:16px}
+    .doc p,.doc li{font-size:15px;line-height:1.9;color:var(--muted)}
+    .doc ul,.doc ol{padding-left:22px;margin:0}
+    .doc li{margin:8px 0}
+    .doc strong{color:var(--ink);font-weight:500}
+    .doc details{border-top:1px solid var(--line)}
+    .doc details:last-of-type{border-bottom:1px solid var(--line)}
+    .doc summary{font-size:16px;padding:19px 0;color:var(--ink)}
+    .doc details>p{padding:0 34px 22px 0}
+    .doc .card{background:#f0eee6;border:1px solid var(--line);border-radius:12px;padding:24px 26px;margin:24px 0}
+    .doc .card p{margin:0}
+    .doc .back{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);font-size:14px}
+    .doc a{color:var(--clay)}
+    .doc-nav{display:flex;gap:22px;font-size:13px;padding:0 4.5%;border-bottom:1px solid var(--line);background:#faf9f5}
+    .doc-nav a{padding:12px 0;color:var(--muted)}
+    .doc-nav a[aria-current]{color:var(--ink);border-bottom:2px solid var(--clay)}
+    @media(max-width:540px){.doc{padding:48px 0 72px}.doc-nav{gap:16px;padding:0 20px;font-size:12px}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳至正文</a>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Chark 首页"><img src="assets/chark.png" alt="" width="45" height="34"><span>Chark</span></a>
+    <nav class="desktop-nav" aria-label="站内导航">
+      <a class="nav-link" href="index.html">首页</a>
+      <a class="nav-link" href="help.html" aria-current="page">帮助</a>
+      <a class="nav-link" href="privacy.html">隐私</a>
+      <a class="nav-link" href="preferences.html">邮件偏好</a>
+    </nav>
+    <div class="nav-actions"><a class="language" href="index.html">中文</a></div>
+  </header>
+  <nav class="doc-nav" aria-label="站内页面">
+    <a href="help.html" aria-current="page">帮助中心</a>
+    <a href="privacy.html">隐私说明</a>
+    <a href="preferences.html">邮件偏好管理</a>
+  </nav>
+  <main id="main" class="doc section-width">
+    <p class="eyebrow">Support</p>
+    <h1>帮助</h1>
+    <p class="lead">Chark 是 ChenC 在本地训练的 AI。这一页说明怎么开始、能做什么、遇到问题找谁。</p>
+
+    <section aria-labelledby="start">
+      <h2 id="start">开始使用</h2>
+      <ul>
+        <li>账号开通后会收到一封欢迎邮件，邮件里有一个进入 Chark 的按钮，点击即可打开。</li>
+        <li>邮件里的图片如果显示空白，多是因为邮件客户端默认不加载远程图片，点一下“显示图片”就能看到。</li>
+        <li>统一使用入口还在开发中，入口正式开放前，邮件里的按钮会指回本站首页；需要提前体验可以直接写信给 <a href="mailto:chen@chenc.com.cn">chen@chenc.com.cn</a>。</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="what">
+      <h2 id="what">Chark 能做什么</h2>
+      <ul>
+        <li><strong>对话</strong>：把问题说清楚，它会把思路一步步展开。</li>
+        <li><strong>写作</strong>：从提纲到成稿，改语气、改长度、改结构。</li>
+        <li><strong>代码</strong>：读代码、写代码、解释报错。</li>
+        <li><strong>图像理解</strong>：看懂截图、图表与照片里的信息。</li>
+        <li><strong>文件分析</strong>：读取你交来的文档并整理要点。</li>
+        <li><strong>离线推理</strong>：模型在本机运行，断网也能用。</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">常见问题</h2>
+      <details>
+        <summary>使用 Chark 需要一直联网吗？</summary>
+        <p>不需要。模型在本地运行，断网也能继续对话与写作。只有需要联网的个别能力（例如检索最新信息）会提示你联网。</p>
+      </details>
+      <details>
+        <summary>欢迎邮件里的按钮点不开怎么办？</summary>
+        <p>先把整封邮件里的链接复制到浏览器打开试试；如果仍然打不开，把邮件标题和截图发到 <a href="mailto:chen@chenc.com.cn">chen@chenc.com.cn</a>，会尽快处理。</p>
+      </details>
+      <details>
+        <summary>可以换一个收信邮箱吗？</summary>
+        <p>可以，写信到支持邮箱说明原邮箱与新邮箱即可。换邮箱不影响账号本身。</p>
+      </details>
+      <details>
+        <summary>不想再收邮件了怎么办？</summary>
+        <p>到<a href="preferences.html">邮件偏好管理</a>页按提示操作，或直接回信写“退订”。账号相关的必要通知（例如安全提醒）会另行说明。</p>
+      </details>
+      <details>
+        <summary>我发的问题会被用来训练模型吗？</summary>
+        <p>不会。你的对话默认留在本机，具体边界写在<a href="privacy.html">隐私说明</a>里。</p>
+      </details>
+      <details>
+        <summary>发现回答有问题，怎么反馈？</summary>
+        <p>把问题、你的期望答案和实际输出一起发给 <a href="mailto:chen@chenc.com.cn">chen@chenc.com.cn</a>，附上时间会更方便定位。</p>
+      </details>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">联系支持</h2>
+      <div class="card">
+        <p>邮箱：<a href="mailto:chen@chenc.com.cn">chen@chenc.com.cn</a><br>写信时请注明使用的邮箱地址与遇到的具体问题，便于快速定位。</p>
+      </div>
+    </section>
+
+    <p class="back"><a href="index.html">← 返回 Chark 首页</a> · <a href="privacy.html">隐私说明</a> · <a href="preferences.html">邮件偏好管理</a></p>
+  </main>
+</body>
+</html>
